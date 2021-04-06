@@ -12,6 +12,7 @@
   left: 4vw;
   top: 24px;
   z-index: 10;
+  transition: top 0.4s;
   &__inner {
     display: flex;
     align-items: center;
@@ -42,10 +43,11 @@
     > ul {
       display: flex;
       justify-content: flex-end;
+      padding: 32px 0px;
+      transition: padding 0.4s;
     }
     .menu-item {
       margin-left: 33px;
-      padding: 32px 0px;
       &:first-of-type {
         margin-left: 0px;
       }
@@ -55,9 +57,23 @@
         font-weight: 500;
         font-family: $header__fontname;
         text-transform: uppercase;
+        letter-spacing: 1.5px;
         &:hover {
           color: $color__main;
         }
+      }
+      &.current_page_item {
+        > a {
+          color: $color__main;
+        }
+      }
+    }
+  }
+  &.scrolled {
+    top: 0px;
+    .site-header__menu {
+      > ul {
+        padding: 22px 0px;
       }
     }
   }

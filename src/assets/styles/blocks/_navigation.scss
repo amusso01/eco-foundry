@@ -1,0 +1,44 @@
+.block-navigation {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__nav {
+    > ul {
+      display: flex;
+      list-style: none;
+      align-items: center;
+      margin-left: 0px;
+      li {
+        padding: 25px 0px;
+        a {
+          font-family: $header__fontname;
+          font-weight: 500;
+          letter-spacing: 1.5px;
+          color: $color__dark;
+          font-size: 13px;
+          margin-right: 25px;
+
+          &:hover {
+            color: $color__main;
+          }
+        }
+        &:last-of-type {
+          a {
+            margin-right: 0px;
+          }
+        }
+      }
+    }
+  }
+  &__button {
+    .btn {
+      min-width: 225px;
+      > a {
+        color: $color__dark;
+        font-size: 13px;
+      }
+    }
+  }
+}

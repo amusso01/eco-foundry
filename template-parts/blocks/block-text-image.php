@@ -54,8 +54,8 @@
     // Return HTML
 
     ?>
-
-    <section id="<?php echo $anchorLink ?>" class="block-text-image"  style="background-color:<?php echo $backgroundColor ?>">
+    <div id="<?php echo $anchorLink ?>"></div>
+    <section  class="block-text-image"  style="background-color:<?php echo $backgroundColor ?>">
 
         <div class="block-text-image__container content-block" >
             <div class="block-text-image__box" style="<?php echo $isTextCenter ? 'align-self:center;' : '' ?><?php echo $position == 'left' ? ' order:2' : '' ?>">

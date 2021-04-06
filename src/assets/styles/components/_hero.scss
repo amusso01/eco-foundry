@@ -71,7 +71,10 @@
     }
     .btn {
       margin-left: auto;
-      min-width: 215px;
+      min-width: 225px;
+      > a {
+        font-size: 13px;
+      }
     }
   }
 }

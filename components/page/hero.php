@@ -36,10 +36,10 @@ if ( has_post_thumbnail() ) : ?>
 				
 			</div>
 			<button class="btn btn__white">
-					<a href="" class="button-text"><?php echo $button['title'] ?></a>
-					<div class="circle">
-						<span class="icon arrow"></span>
-					</div>
+				<a href="" class="button-text"><?php echo $button['title'] ?></a>
+				<div class="circle">
+					<span class="icon arrow"></span>
+				</div>
 			</button>
 		</div>
 	</div>	
