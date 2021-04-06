@@ -1,0 +1,1 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.107" height="15.731" viewBox="0 0 20.107 15.731"><g data-name="Group 10" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"><path data-name="Path 15" d="M1.004 8.052h16.719"/><path data-name="Path 16" d="M12.348 1.414l6.354 6.49-6.354 6.412"/></g></svg>
