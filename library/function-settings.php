@@ -301,3 +301,15 @@ function we_login_logo() {
     </style>
 <?php }
 add_action( 'login_enqueue_scripts', 'we_login_logo' );
+
+/* 2.7 EDITOR STYLE
+/–––––––––––––––––––––––––––––––––*/
+
+add_action( 'after_setup_theme', 'misha_gutenberg_css' );
+ 
+function misha_gutenberg_css(){
+ 
+	add_theme_support( 'editor-styles' ); // if you don't add this line, your stylesheet won't be added
+	add_editor_style( 'gutten-style/style-editor.css' ); // tries to include style-editor.css directly from your theme folder
+ 
+}

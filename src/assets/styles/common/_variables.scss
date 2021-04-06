@@ -106,6 +106,24 @@ $color__footerBg: var(--footer-color);
 $color__bright: #ffffff;
 $color__dark: #011626;
 
+// Gutenberg color options
+// -- see editor-color-palette in functions.php
+$colors: (text, $color__text), (green, $color__main), (bright, $color__bright),
+  (orange, $color__link), (dark, $color__dark);
+
+/* Color Options
+--------------------------------------------- */
+
+@each $name, $color in $colors {
+  .has-#{$name}-color {
+    color: $color;
+  }
+
+  .has-#{$name}-background-color {
+    background-color: $color;
+  }
+}
+
 /*==================================================================================
   BUTTONS
 ==================================================================================*/

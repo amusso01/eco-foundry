@@ -1,0 +1,8 @@
+.block-text-image__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+}
+.block-text-image__container h6 {
+  color: #22cc61;
+}

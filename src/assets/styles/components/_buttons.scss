@@ -25,7 +25,8 @@ button.btn {
   border: 0;
   vertical-align: middle;
   text-decoration: none;
-  > p {
+  > p,
+  > a {
     color: $color__dark;
     position: absolute;
     top: 50%;
@@ -67,6 +68,13 @@ button.btn {
     .circle {
       max-width: 100%;
     }
+  }
+}
+
+button.btn__white {
+  > p,
+  > a {
+    color: $color__bright;
   }
 }
 

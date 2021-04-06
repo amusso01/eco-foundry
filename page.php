@@ -15,17 +15,14 @@
 get_header();
 ?>
 
+<?php get_template_part( 'components/page/hero' ) ?>
+
 <main role="main" class="site-main page-main">
 <?php
 
 if ( have_posts() ) :
-	while ( have_posts() ) :
-		the_post();
 
-		get_template_part( 'template-parts/content', 'page' );
-
-
-	endwhile; // End of the loop.
+	the_content();
 
 else :
 
