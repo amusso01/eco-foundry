@@ -2,6 +2,7 @@ import smoothscroll from "smoothscroll-polyfill";
 import lozad from "lozad";
 import hamburger from "./../part/hamburger";
 import navigation from "./../part/navigation";
+import tabSlider from "./../part/tabslider";
 
 export default {
 	init() {
@@ -15,6 +16,14 @@ export default {
 
 		// Nav resize
 		navigation();
+
+
+		// TABSLIDER
+		const tabSliderElement = document.getElementById('blocktabSlider');
+		if (typeof(tabSliderElement) != 'undefined' && tabSliderElement != null)
+		 {
+			 tabSlider();
+		 }
 
 		// Lazy load image with lozad.js https://github.com/ApoorvSaxena/lozad.js
 		const observer = lozad(); // lazy loads elements with default selector as '.lozad'

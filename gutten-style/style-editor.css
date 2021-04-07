@@ -22,3 +22,17 @@
 .block-navigation__container ul li a {
   margin-right: 10px;
 }
+
+.block-background-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.block-background-image .overlay-text h2,
+.block-background-image .overlay-text p {
+  color: #ffffff;
+}

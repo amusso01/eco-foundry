@@ -1,3 +1,7 @@
+// SWIPER import
+@import "~swiper/swiper";
+@import "~swiper/components/effect-flip/effect-flip";
+
 //Custom styles start here
 
 // Common
@@ -22,5 +26,6 @@
 @import "blocks/text-image";
 @import "blocks/navigation";
 @import "blocks/background";
+@import "blocks/tabSlider";
 
 // Templates

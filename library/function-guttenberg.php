@@ -92,3 +92,4 @@ LOAD CUSTOM ACF-GUTENBERG-BLOCKS
 require get_template_directory().'/template-parts/blocks/block-text-image.php';
 require get_template_directory().'/template-parts/blocks/block-navigation.php';
 require get_template_directory().'/template-parts/blocks/block-background-image.php';
+require get_template_directory().'/template-parts/blocks/block-tab-slider.php';
