@@ -1,0 +1,51 @@
+.block-background-image {
+  min-height: 630px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+  &::after {
+    @include pseudo;
+    width: 100%;
+    height: 100%;
+    background: transparent
+      linear-gradient(0deg, #04171a 0%, #061f22b5 55%, #08252900 100%) 0% 0%
+      no-repeat padding-box;
+    z-index: 0;
+  }
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+    z-index: 5;
+    text-align: center;
+    width: 50%;
+    > h2 {
+      color: $color__bright;
+      font-size: 25px;
+      letter-spacing: 0.75px;
+      margin-bottom: 15px;
+    }
+    > img {
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    > p {
+      color: $color__bright;
+      &.body {
+        letter-spacing: 0.16px;
+        line-height: 30px;
+        margin-bottom: 30px;
+      }
+      &.green {
+        color: $color__main;
+        font-size: 21px;
+        letter-spacing: 0.21px;
+        font-weight: 600;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

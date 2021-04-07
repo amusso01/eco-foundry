@@ -44,6 +44,21 @@
       > p {
         margin-bottom: 0;
         line-height: 30px;
+        > strong {
+          font-size: 21px;
+          letter-spacing: 0.21px;
+        }
+        > a {
+          color: $color__main;
+          font-weight: 600;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      > ul {
+        list-style-image: url(./../images/leaf.svg);
+        list-style-position: inside;
       }
       @media #{$breakpoint-md-up} {
         padding-right: 80px;

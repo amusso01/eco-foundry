@@ -49,7 +49,7 @@
     $image = get_field('image');
     $text = get_field('text');
     $anchorLink = get_field('anchor_point');
-
+    $anchorLink = strtolower(trim( $anchorLink));
 
     // Return HTML
 

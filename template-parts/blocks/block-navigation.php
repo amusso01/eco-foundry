@@ -52,13 +52,14 @@
 
     ?>
 
-    <section class="block-navigation" >
+    <section class="block-navigation" id="blockNavigation" >
 
         <div class="block-navigation__container content-block" >
             <div class="block-navigation__nav">
                 <ul>
                     <?php foreach($links as $link ): ?>
-                        <li><a href="#<?php echo $link['link_and_anchor']['anchor_link']  ?>"><?php echo $link['link_and_anchor']['link'] ?></a></li>
+                        <?php $anchor = strtolower(trim($link['link_and_anchor']['anchor_link'])); ?>
+                        <li><a href="#<?php echo $anchor  ?>"><?php echo $link['link_and_anchor']['link'] ?></a></li>
                     <?php endforeach; ?>
                 </ul>
             </div>
