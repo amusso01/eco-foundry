@@ -3,6 +3,7 @@ import lozad from "lozad";
 import hamburger from "./../part/hamburger";
 import navigation from "./../part/navigation";
 import tabSlider from "./../part/tabslider";
+import accordion from "../part/accordion"
 
 export default {
 	init() {
@@ -24,6 +25,13 @@ export default {
 		 {
 			 tabSlider();
 		 }
+
+		//  ACCORDION
+		// const accordionDiv = document.getElementById('js-badger-accordion')
+		// if (typeof(accordionDiv) != 'undefined' && accordionDiv != null)
+		//  {
+			 accordion();
+		//  }
 
 		// Lazy load image with lozad.js https://github.com/ApoorvSaxena/lozad.js
 		const observer = lozad(); // lazy loads elements with default selector as '.lozad'

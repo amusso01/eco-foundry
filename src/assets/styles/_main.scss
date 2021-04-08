@@ -15,6 +15,7 @@
 @import "common/helper";
 
 // Components
+@import "components/badgerAccordionStyle.scss";
 @import "components/hamburger";
 @import "components/search-form";
 @import "components/buttons";
@@ -27,5 +28,6 @@
 @import "blocks/navigation";
 @import "blocks/background";
 @import "blocks/tabSlider";
+@import "blocks/accordion";
 
 // Templates

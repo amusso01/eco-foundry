@@ -38,6 +38,7 @@ button.btn {
     text-transform: uppercase;
     z-index: 1;
     letter-spacing: 1.5px;
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   }
   .circle {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
@@ -66,6 +67,10 @@ button.btn {
   }
   &:hover {
     text-decoration: none;
+    > a,
+    p {
+      color: $color__bright;
+    }
     .circle {
       max-width: 100%;
     }

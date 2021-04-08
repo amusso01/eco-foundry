@@ -58,7 +58,15 @@
       }
       > ul {
         list-style-image: url(./../images/leaf.svg);
-        list-style-position: inside;
+        // list-style-position: inside;
+        > li {
+          line-height: 30px;
+          font-weight: 600;
+          margin-bottom: 10px;
+          &:last-of-type {
+            margin-bottom: 0px;
+          }
+        }
       }
       @media #{$breakpoint-md-up} {
         padding-right: 80px;

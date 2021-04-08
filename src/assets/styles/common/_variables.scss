@@ -105,11 +105,13 @@ $color__link-hover: var(--link_color_hover);
 $color__footerBg: var(--footer-color);
 $color__bright: #ffffff;
 $color__dark: #011626;
+$color__grey: #f4f5f8;
 
 // Gutenberg color options
 // -- see editor-color-palette in functions.php
 $colors: (text, $color__text), (green, $color__main), (bright, $color__bright),
-  (orange, $color__link), (dark, $color__dark);
+  (orange, $color__link), (dark, $color__dark), (footer, $color__footerBg),
+  (grey, $color__grey);
 
 /* Color Options
 --------------------------------------------- */

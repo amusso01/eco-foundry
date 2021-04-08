@@ -51,6 +51,16 @@ function foundry_block_setup() {
 			'color' => '#FD946E',
 		),
 		array(
+			'name'  => __( 'Dark blue', 'foundry' ),
+			'slug'  => 'footer',
+			'color' => '#082529',
+		),
+		array(
+			'name'  => __( 'Light Grey', 'foundry' ),
+			'slug'  => 'grey',
+			'color' => '#F4F5F8',
+		),
+		array(
 			'name'  => __( 'Dark', 'foundry' ),
 			'slug'  => 'dark',
 			'color' => '#011626',
@@ -93,3 +103,4 @@ require get_template_directory().'/template-parts/blocks/block-text-image.php';
 require get_template_directory().'/template-parts/blocks/block-navigation.php';
 require get_template_directory().'/template-parts/blocks/block-background-image.php';
 require get_template_directory().'/template-parts/blocks/block-tab-slider.php';
+require get_template_directory().'/template-parts/blocks/block-accordion.php';
