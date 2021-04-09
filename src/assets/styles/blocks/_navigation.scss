@@ -39,6 +39,11 @@
         color: $color__dark;
         font-size: 13px;
       }
+      &:hover {
+        > a {
+          color: $color__bright;
+        }
+      }
     }
   }
 }

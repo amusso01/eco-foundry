@@ -1,5 +1,14 @@
 footer.site-footer {
   padding-top: 120px;
+  position: relative;
+  .top-line {
+    position: absolute;
+    width: 80vw;
+    left: 10vw;
+    height: 1px;
+    background-color: #ecebeb;
+    top: 0px;
+  }
   .footer-enquire {
     min-height: 200px;
 

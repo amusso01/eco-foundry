@@ -14,6 +14,7 @@
 </div><!-- #content -->
 
 	<footer class="site-footer">
+		<div class="top-line"></div>
 		<div class="site-footer__inner">
 
 			<div class="footer-enquire content-block">

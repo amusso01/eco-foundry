@@ -1,6 +1,8 @@
 .block-accordion {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding: 90px 0rem;
+  @media #{$breakpoint-sm-up} {
+    padding: 90px 8rem;
+  }
   .accordion-container {
     > h2 {
       text-transform: uppercase;
