@@ -69,7 +69,7 @@
                 </div>
             </div>
             <div class="block-text-image__box" style="<?php echo $position == 'left' ? ' order:1' : '' ?>">
-                <img src="<?php echo $image['url']  ?>" alt="<?php echo $image['title'] ?>">
+                <img src="<?php echo $image['url']  ?>" class="lozad" alt="<?php echo $image['title'] ?>">
             </div>
         </div>
 

@@ -3,6 +3,7 @@ import lozad from "lozad";
 import hamburger from "./../part/hamburger";
 import navigation from "./../part/navigation";
 import tabSlider from "./../part/tabslider";
+import teamSlider from "./../part/teamSlider";
 import accordion from "../part/accordion"
 
 export default {
@@ -18,6 +19,12 @@ export default {
 		// Nav resize
 		navigation();
 
+		// TEAMSLIDER
+		const teamSliderElement = document.getElementById('blockTeam');
+		if (typeof(teamSliderElement) != 'undefined' && teamSliderElement != null)
+		{
+			teamSlider()
+		}
 
 		// TABSLIDER
 		const tabSliderElement = document.getElementById('blocktabSlider');

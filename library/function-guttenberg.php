@@ -104,3 +104,4 @@ require get_template_directory().'/template-parts/blocks/block-navigation.php';
 require get_template_directory().'/template-parts/blocks/block-background-image.php';
 require get_template_directory().'/template-parts/blocks/block-tab-slider.php';
 require get_template_directory().'/template-parts/blocks/block-accordion.php';
+require get_template_directory().'/template-parts/blocks/block-team.php';
