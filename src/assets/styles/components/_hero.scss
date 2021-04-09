@@ -78,3 +78,20 @@
     }
   }
 }
+
+// HERO SMALL
+.hero__small {
+  position: relative;
+  .media-container {
+    padding-bottom: 0px;
+    height: auto;
+    img {
+      position: relative;
+    }
+  }
+  .hero-content__info {
+    h1 {
+      margin-bottom: 0px;
+    }
+  }
+}
