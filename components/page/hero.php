@@ -7,19 +7,27 @@
  * @package foundry
  **/
 
- $title = get_field('title');
- $subtitle = get_field('subtitle');
- $bannerText = get_field('banner_text');
- $button = get_field('banner_button');
+
+ if(!is_home()){
+	$title = get_field('title');
+	$subtitle = get_field('subtitle');
+	$bannerText = get_field('banner_text');
+	$button = get_field('banner_button');
+ }else{
+	$title = get_field('title', get_option( 'page_for_posts' ) );
+	$subtitle = get_field('subtitle' , get_option( 'page_for_posts' ) );
+	$bannerText = get_field('banner_text', get_option( 'page_for_posts' ));
+	$button = get_field('banner_button', get_option( 'page_for_posts' ));
+ }
 
 
 
-if ( has_post_thumbnail() ) : ?>
+?>
 	<section class="section hero">
 		<div class="media-container">
-			<img class="img-fluid hero-image">
-				<?php the_post_thumbnail (); ?>
-			</img>
+			<img src="<?php echo get_the_post_thumbnail_url(get_option( 'page_for_posts' )) ?>" class="img-fluid hero-image">
+				
+			
 		</div>
 		<div class="hero-content">
 			<div class="hero-content__info">
@@ -43,4 +51,3 @@ if ( has_post_thumbnail() ) : ?>
 			</button>
 		</div>
 	</div>	
-<?php endif; ?>

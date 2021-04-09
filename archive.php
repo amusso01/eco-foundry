@@ -10,9 +10,10 @@
 get_header();
 ?>
 
+<?php get_template_part( 'components/page/hero' ) ?>
 
 <main role="main" class=" main rchive-main">
-
+<?php wp_list_categories(); ?>
 <?php if ( have_posts() ) : ?>
 
 	<header class="page-header">

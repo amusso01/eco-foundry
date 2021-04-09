@@ -313,3 +313,27 @@ function misha_gutenberg_css(){
 	add_editor_style( 'gutten-style/style-editor.css' ); // tries to include style-editor.css directly from your theme folder
  
 }
+
+
+/* 2.8 RENAME POST TO Case studies
+/–––––––––––––––––––––––––––––––––*/
+add_action( 'init', 'cp_change_post_object' );
+// Change dashboard Posts to Case studies
+function cp_change_post_object() {
+    $get_post_type = get_post_type_object('post');
+    $labels = $get_post_type->labels;
+	$labels->name = 'Case studies';
+	$labels->singular_name = 'Case studies';
+	$labels->add_new = 'Add Case studies';
+	$labels->add_new_item = 'Add Case studies';
+	$labels->edit_item = 'Edit Case studies';
+	$labels->new_item = 'Case studies';
+	$labels->view_item = 'View Case studies';
+	$labels->search_items = 'Search Case studies';
+	$labels->not_found = 'No Case studies found';
+	$labels->not_found_in_trash = 'No Case studies found in Trash';
+	$labels->all_items = 'All Case studies';
+	$labels->menu_name = 'Case studies';
+	$labels->name_admin_bar = 'Case studies';
+	
+}

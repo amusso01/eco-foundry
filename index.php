@@ -15,31 +15,35 @@
 get_header();
 ?>
 
+<?php get_template_part( 'components/page/hero' ) ?>
 
 <main role="main" class=" main index-main">
+	<?php 
+	$categories = get_categories();
+	foreach($categories as $category) {
+	   echo '<div class="col-md-4"><a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></div>';
+	}
+	?>
+	<div class="case-tudies__container">
+		<?php
+		if ( have_posts() ) :?>
 
-<?php
-if ( have_posts() ) :?>
+		<?php
+			/* Start the Loop */
+			while ( have_posts() ) :
 
-	<header>
-		<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-	</header>
+				the_post();
+				get_template_part( 'template-parts/content', get_post_type() );
 
-<?php
-	/* Start the Loop */
-	while ( have_posts() ) :
+			endwhile;
 
-		the_post();
-		get_template_part( 'template-parts/content', get_post_type() );
+		else :
 
-	endwhile;
+			get_template_part( 'template-parts/content', 'none' );
 
-else :
-
-	get_template_part( 'template-parts/content', 'none' );
-
-endif;
-?>
+		endif;
+		?>
+	</div>
 
 </main><!-- #main -->
 
