@@ -8,7 +8,7 @@
  **/
 
 
- if(!is_home()){
+ if(!is_home() && !is_archive()){
 	$title = get_field('title');
 	$subtitle = get_field('subtitle');
 	$bannerText = get_field('banner_text');

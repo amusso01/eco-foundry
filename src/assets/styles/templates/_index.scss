@@ -1,0 +1,72 @@
+.index-main {
+  position: relative;
+  padding: 0rem 0rem;
+  @media #{$breakpoint-sm-up} {
+    padding: 0rem 8rem;
+  }
+  margin-bottom: 100px;
+  .category-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    > a {
+      text-transform: uppercase;
+      font-family: $header__fontname;
+      font-size: 13px;
+      letter-spacing: 1.9px;
+      display: inline-block;
+      margin-right: 38px;
+      color: $color__dark;
+      font-weight: 500;
+      &:last-of-type {
+        margin-right: 0px;
+      }
+      &.active {
+        color: $color__main;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .case-tudies__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 30px;
+  }
+  .case-study {
+    &__cat {
+      margin-bottom: 0.9rem;
+      > a {
+        text-transform: uppercase;
+        font-family: $header__fontname;
+        font-size: 13px;
+        letter-spacing: 1.9px;
+        display: inline-block;
+        margin-right: 16px;
+        color: $color__main;
+        font-weight: 500;
+        &:hover {
+          text-decoration: underline;
+        }
+        &:last-of-type {
+          margin-right: 0px;
+        }
+      }
+    }
+    h3 {
+      font-weight: 500;
+      letter-spacing: 0.2px;
+      line-height: 30px;
+      width: 80%;
+    }
+  }
+}
+#caseAnchor {
+  min-height: 50px;
+  position: absolute;
+  top: -70px;
+  pointer-events: none;
+}
