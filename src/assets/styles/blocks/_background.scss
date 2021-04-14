@@ -26,6 +26,9 @@
       font-size: 25px;
       letter-spacing: 0.75px;
       margin-bottom: 15px;
+      &.big {
+        font-size: 35px;
+      }
     }
     > img {
       margin-bottom: 20px;

@@ -63,6 +63,7 @@
                     <?php endforeach; ?>
                 </ul>
             </div>
+            <?php if($button): ?>
             <div class="block-navigation__button">
                 <button class="btn btn__white">
                     <a href="<?php echo $button['url'] ?>" class="button-text"><?php echo $button['title'] ?></a>
@@ -71,6 +72,7 @@
                     </div>
                 </button>
             </div>
+            <?php endif; ?>
         </div>
 
     </section>

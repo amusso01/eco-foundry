@@ -1,0 +1,87 @@
+.contact-main {
+  padding: 6rem 0rem;
+  @media #{$breakpoint-sm-up} {
+    padding: 6rem 16rem;
+  }
+  .wp-block-contact-form-7-contact-form-selector {
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    .wpcf7-form {
+      > p,
+      .p-wrapper {
+        margin-bottom: 20px;
+      }
+      .form-element__wrapper {
+        font-size: 21px;
+        color: $color__dark;
+        font-weight: 600;
+        span {
+          font-size: 16px;
+          color: $color__text;
+          font-weight: 400;
+        }
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        border: none;
+        background-color: #f4f5f8;
+      }
+      input[type="checkbox"] {
+        width: auto;
+        display: inline;
+      }
+      input {
+        &:not([type="checkbox"]) {
+          padding: 25px 15px;
+          margin-top: 15px;
+        }
+        &[type="submit"] {
+          min-width: $button__width;
+          min-height: $button__height;
+          background-color: $color__link;
+          text-decoration: none;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          color: $color__bright;
+          border-radius: $button__radius;
+          line-height: 0px;
+          font-weight: 500;
+          font-family: $header__fontname;
+          text-transform: uppercase;
+          border: none;
+          cursor: pointer;
+          &:hover {
+            color: $color__bright;
+          }
+        }
+      }
+      .wpcf7-checkbox {
+        > .wpcf7-list-item {
+          margin-left: 0px;
+        }
+        label {
+          > span {
+            color: $color__dark;
+          }
+        }
+      }
+      input[type="checkbox"] {
+      }
+      .privacy {
+        font-size: 14px;
+        > a {
+          font-size: 14px;
+          color: $color__dark;
+          text-decoration: underline;
+          &:hover {
+            color: $color__main;
+          }
+        }
+      }
+    }
+  }
+}

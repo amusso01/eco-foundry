@@ -106,3 +106,5 @@ require get_template_directory().'/template-parts/blocks/block-tab-slider.php';
 require get_template_directory().'/template-parts/blocks/block-accordion.php';
 require get_template_directory().'/template-parts/blocks/block-team.php';
 require get_template_directory().'/template-parts/blocks/block-brochure.php';
+require get_template_directory().'/template-parts/blocks/block-company.php';
+require get_template_directory().'/template-parts/blocks/block-partners.php';

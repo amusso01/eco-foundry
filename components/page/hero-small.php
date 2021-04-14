@@ -22,7 +22,7 @@ if ( has_post_thumbnail() ) : ?>
 		</div>
 		<div class="hero-content">
 			<div class="hero-content__info">
-				<h1><?php echo $title ?> </h1>
+				<h1><span class="green"><?php echo $greenTitle ?></span><?php echo $title ?> </h1>
 				<p><?php  echo $subtitle ?></p>
 			</div>
 		</div>

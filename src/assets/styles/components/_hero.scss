@@ -41,6 +41,11 @@
       h1 {
         color: $color__bright;
         margin-bottom: 10px;
+        span.green {
+          color: $color__main;
+          display: block;
+          line-height: 30px;
+        }
       }
       p {
         color: $color__bright;
@@ -96,6 +101,11 @@
   .hero-content__info {
     h1 {
       margin-bottom: 0px;
+      span.green {
+        color: $color__main;
+        display: block;
+        line-height: 30px;
+      }
     }
   }
 }

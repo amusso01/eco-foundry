@@ -1,0 +1,44 @@
+.block-company {
+  &__container {
+    padding: 6rem 0rem;
+    @media #{$breakpoint-sm-up} {
+      padding: 6rem 8rem;
+    }
+  }
+  .company-logo {
+    margin-bottom: 35px;
+  }
+  .company-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    column-gap: 120px;
+    .text-big {
+      margin-bottom: 25px;
+      > p {
+        font-size: 21px;
+        letter-spacing: 0.2px;
+        color: $color__dark;
+        font-weight: 600;
+        line-height: 30px;
+      }
+    }
+    .text-small {
+      > p {
+        letter-spacing: 0.1px;
+        line-height: 30px;
+      }
+    }
+    .value {
+      margin-bottom: 40px;
+      > h3 {
+        text-transform: uppercase;
+        letter-spacing: 0.75px;
+        font-size: 25px;
+      }
+      > p {
+        letter-spacing: 0.1px;
+        line-height: 30px;
+      }
+    }
+  }
+}

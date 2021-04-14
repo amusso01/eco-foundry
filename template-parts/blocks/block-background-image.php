@@ -64,7 +64,7 @@
 
         <div class="overlay-text content-block">
         <?php if($title) : ?>
-            <h2><?php echo $title ?></h2>
+            <h2 class="<?php echo $logo ? '' : 'big' ?>" ><?php echo $title ?></h2>
         <?php endif; ?>
         <?php if($logo) : ?>
             <img src="<?php echo $logo ?>" alt="logo">
@@ -79,8 +79,6 @@
             <a href="<?php echo $button['url'] ?>" class="button"><?php echo $button['title'] ?></a>
         <?php endif; ?>
          
-         
-          
         </div>
 
     </section>
