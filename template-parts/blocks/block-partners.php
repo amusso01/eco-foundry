@@ -42,14 +42,10 @@
  function foundry_gutenblock_partners() {
     
     // Option vars
-    $backgroundColor = get_field('background_color');
-    $anchorLink = get_field('anchor_point');
     $anchorLink = strtolower(trim( $anchorLink));
 
     // Get Vars
-    $title = get_field('title');
-    $carousel = get_field('carousel');
-
+    $partners = get_field('partners');
 
     // Return HTML
 
@@ -57,7 +53,14 @@
     <div id="<?php echo $anchorLink ?>"></div>
     <section class="block-partners content-block" >
         <div class="block-partners__container ">
-           
+           <h5>IN PARTNERSHIP WITH</h5>
+           <div class="block-partners__grid">
+               <?php foreach($partners as $partner) : ?>
+                    <div class="single-partners">
+                        <img src="<?php echo $partner['partner']['url'] ?>" alt="<?php echo $partner['partner']['title'] ?>">
+                    </div>
+                <?php endforeach; ?>
+           </div>
         </div>
     </section>
 

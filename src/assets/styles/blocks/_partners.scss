@@ -1,0 +1,28 @@
+.block-partners {
+  padding: 6rem 0rem;
+  @media #{$breakpoint-sm-up} {
+    padding: 6rem 8rem;
+  }
+  &__container {
+    > h5 {
+      text-align: center;
+      font-size: 13px;
+      letter-spacing: 1.9px;
+      font-weight: 600;
+      margin-bottom: 35px;
+    }
+  }
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .single-partners {
+      width: 180px;
+      margin-bottom: 25px;
+      padding: 25px 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

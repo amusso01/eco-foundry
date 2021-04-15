@@ -1,11 +1,11 @@
 .hero {
   position: relative;
-  .media-container {
-    padding-bottom: 50%;
+  .video-container {
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
-
-    iframe {
+    iframe,
+    video {
       position: absolute;
       top: 0;
       left: 0;
@@ -13,6 +13,11 @@
       height: 100%;
       z-index: -1;
     }
+  }
+  .media-container {
+    padding-bottom: 50%;
+    height: 0;
+    overflow: hidden;
     img {
       position: relative;
       object-fit: cover;
@@ -36,7 +41,7 @@
     }
     &__info {
       position: absolute;
-      bottom: 5rem;
+      bottom: 7rem;
       width: 60vw;
       h1 {
         color: $color__bright;
@@ -46,6 +51,11 @@
           display: block;
           line-height: 30px;
         }
+        &.home-title {
+          line-height: 70px;
+          font-size: 65px;
+          margin-bottom: 10px;
+        }
       }
       p {
         color: $color__bright;
@@ -53,6 +63,11 @@
         font-weight: 600;
         line-height: 32px;
         letter-spacing: 0.2px;
+      }
+      .btn {
+        min-width: 225px;
+        display: inline-block;
+        margin-top: 30px;
       }
     }
   }
