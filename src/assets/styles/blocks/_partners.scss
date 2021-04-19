@@ -1,6 +1,9 @@
 .block-partners {
   padding: 6rem 0rem;
   @media #{$breakpoint-sm-up} {
+    padding: 6rem 4rem;
+  }
+  @media #{$breakpoint-md-up} {
     padding: 6rem 8rem;
   }
   &__container {

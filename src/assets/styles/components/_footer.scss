@@ -1,6 +1,9 @@
 footer.site-footer {
-  padding-top: 120px;
+  padding-top: 60px;
   position: relative;
+  @media #{$breakpoint-md-up} {
+    padding-top: 120px;
+  }
   .top-line {
     position: absolute;
     width: 80vw;
@@ -11,13 +14,23 @@ footer.site-footer {
   }
   .footer-enquire {
     min-height: 200px;
-
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+    @media #{$breakpoint-md-up} {
+      padding-bottom: 0px;
+    }
     .button {
       align-self: flex-start;
     }
     .text {
+      text-align: center;
+      margin-bottom: 15px;
+      @media #{$breakpoint-sm-up} {
+        text-align: left;
+        margin-bottom: 0px;
+      }
       .h2 {
         text-transform: uppercase;
         margin-top: 5px;
@@ -31,6 +44,10 @@ footer.site-footer {
     background-color: $color__footerBg;
     position: relative;
     &:after {
+      display: none;
+      @media #{$breakpoint-md-up} {
+        display: block;
+      }
       content: "";
       position: absolute;
       right: 0px;
@@ -40,6 +57,10 @@ footer.site-footer {
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='133' height='117' viewBox='0 0 133 117'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='Rectangle_136' data-name='Rectangle 136' width='133' height='117' transform='translate(-1267 2223)' fill='%23fff'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='Mask_Group_3' data-name='Mask Group 3' transform='translate(1267 -2223)' clip-path='url(%23clip-path)'%3E%3Cg id='Group_336' data-name='Group 336' transform='translate(-2500 2067)'%3E%3Cpath id='Path_376' data-name='Path 376' d='M883.174,600.582l8.187-1.751c-1.812-.9-2.613-1.581-3.451-1.675-7.553-.845-10.5-7.585-11.907-16.418-.626-3.932-1.347-7.837-2.113-12.263l7.807-.152.256-1.158c-1.3-.979-2.526-2.378-3.925-2.858-4.365-1.5-5.637-5.372-5.672-10.972-.032-5.1-.618-10.191-.992-15.76l6.506,1.205c-2.431-4.012-5.38-7.032-6.3-10.916-.928-3.906.161-8.671.382-13.426l6.108.966c-7.161-3.144-4.993-10.214-4.081-16.724a3.292,3.292,0,0,1,.063-.526q1.412-4.43,2.837-8.853c2.19,1.786,4.874,3.029,6.4,5.538,1.127,1.846.741,5.347,1.055,8.344l2.848-2.25c8.879,5.914,6.363,15.244,4.536,24.738l5.758-9.753c3.494,7.154,6.839,13.707,9.873,20.51.49,1.1-.212,3.4-.687,4.977a131.811,131.811,0,0,0-3.745,13.439l8.028-11.228c1.913,7.173,3.863,12.934,4.951,18.974,1.3,7.227-4.066,10.774-6.487,17.156l8.106-7.173c.738,7.523,1.424,13.879,1.893,20.264.05.672-1.1,1.8-1.845,2.217-1.816,1-3.724,1.711-5.586,3.509a26.866,26.866,0,0,0,4.458.65c3.021-.051,4.02,1.874,4.271,5.8.606,9.446.752,9.43-5.5,12.224.028.294-.01.787.1.853,6.216,3.845,6.221,3.843,5.291,13.451-.29,3-.442,6.047-.994,8.959-.25,1.323-1.159,3.033-2.045,3.414-2.895,1.24-9.127-7.378-8.5-11.444.154-.995.156-2.032.238-3.172-5.8,2.354-7.433,1.41-13.012-7.443l3.328-3.379.583-1.466C890.244,619.025,887.084,609.79,883.174,600.582Z' transform='translate(289.753 -154.19) rotate(-10)' fill='%23072529'/%3E%3Cpath id='Path_377' data-name='Path 377' d='M883.174,572.333l8.187-1.306a18.083,18.083,0,0,0-3.451-1.249c-7.553-.631-10.5-5.66-11.907-12.25-.626-2.934-1.347-5.848-2.113-9.15l7.807-.113.256-.864c-1.3-.73-2.526-1.775-3.925-2.133-4.365-1.117-5.637-4.008-5.672-8.187-.032-3.8-.618-7.6-.992-11.759l6.506.9c-2.431-2.993-5.38-5.247-6.3-8.145-.928-2.914.161-6.47.382-10.017l6.108.721c-7.161-2.346-4.993-7.621-4.081-12.479a1.866,1.866,0,0,1,.063-.392q1.412-3.306,2.837-6.605c2.19,1.333,4.874,2.26,6.4,4.132,1.127,1.377.741,3.99,1.055,6.226l2.848-1.679c8.879,4.413,6.363,11.374,4.536,18.458l5.758-7.277c3.494,5.338,6.839,10.228,9.873,15.3.49.82-.212,2.54-.687,3.713a79.831,79.831,0,0,0-3.745,10.028l8.028-8.377c1.913,5.352,3.863,9.651,4.951,14.157,1.3,5.393-4.066,8.039-6.487,12.8l8.106-5.352c.738,5.613,1.424,10.355,1.893,15.12.05.5-1.1,1.346-1.845,1.654a24.625,24.625,0,0,0-5.586,2.618,35.485,35.485,0,0,0,4.458.485c3.021-.038,4.02,1.4,4.271,4.329.606,7.048.752,7.036-5.5,9.121.028.22-.01.587.1.637,6.216,2.869,6.221,2.867,5.291,10.036a56.83,56.83,0,0,1-.994,6.685,3.971,3.971,0,0,1-2.045,2.547c-2.895.925-9.127-5.505-8.5-8.539a22.812,22.812,0,0,0,.238-2.367c-5.8,1.757-7.433,1.052-13.012-5.553l3.328-2.521.583-1.094C890.244,586.094,887.084,579.2,883.174,572.333Z' transform='matrix(0.682, 0.731, -0.731, 0.682, 1095.705, -762.267)' fill='%23072529'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
     }
     &:before {
+      display: none;
+      @media #{$breakpoint-md-up} {
+        display: block;
+      }
       content: "";
       position: absolute;
       left: 0px;
@@ -50,9 +71,19 @@ footer.site-footer {
     }
     .footer-menu {
       display: flex;
+      flex-direction: column;
+      @media #{$breakpoint-sm-up} {
+        flex-direction: row;
+      }
       .menu-item {
-        margin-left: 33px;
+        margin-left: 0px;
         padding: 40px 0px;
+        text-align: center;
+        @media #{$breakpoint-sm-up} {
+          margin-left: 33px;
+          padding: 20px 0px;
+          text-align: left;
+        }
         &:first-of-type {
           margin-left: 0px;
         }
@@ -72,9 +103,19 @@ footer.site-footer {
   .footer-lower {
     .footer-menu {
       display: flex;
+      flex-direction: column;
+      @media #{$breakpoint-sm-up} {
+        flex-direction: row;
+      }
       .menu-item {
-        margin-left: 33px;
-        padding: 40px 0px;
+        margin-left: 0px;
+        padding: 20px 0px;
+        text-align: center;
+        @media #{$breakpoint-sm-up} {
+          margin-left: 33px;
+          padding: 40px 0px;
+          text-align: left;
+        }
         &:first-of-type {
           margin-left: 0px;
         }
@@ -92,11 +133,21 @@ footer.site-footer {
   }
   .footer-lower__social-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding-bottom: 20px;
+    flex-wrap: wrap;
+    @media #{$breakpoint-sm-up} {
+      justify-content: space-between;
+    }
     .privacy {
       display: flex;
+      margin-bottom: 30px;
+      margin-top: 20px;
+      @media #{$breakpoint-sm-up} {
+        margin-bottom: 0px;
+        margin-top: 0px;
+      }
       > a {
         font-size: 13px;
         display: inline-block;

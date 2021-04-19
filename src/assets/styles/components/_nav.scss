@@ -7,16 +7,17 @@
 
 .site-header {
   background-color: $color__bright;
-  position: fixed;
+  position: inherit;
   width: 100vw;
   top: 0px;
   z-index: 10;
   transition: top 0.4s;
 
-  @media #{$breakpoint-lg-up} {
+  @media #{$breakpoint-md-up} {
     width: 92vw;
     left: 4vw;
     top: 24px;
+    position: fixed;
   }
   &__inner {
     display: flex;
