@@ -34,11 +34,11 @@ export default {
 		 }
 
 		//  ACCORDION
-		// const accordionDiv = document.getElementById('js-badger-accordion')
-		// if (typeof(accordionDiv) != 'undefined' && accordionDiv != null)
-		//  {
+		const accordionDiv = document.getElementById('js-badger-accordion')
+		if (typeof(accordionDiv) != 'undefined' && accordionDiv != null)
+		 {
 			 accordion();
-		//  }
+		 }
 
 		// Lazy load image with lozad.js https://github.com/ApoorvSaxena/lozad.js
 		const observer = lozad(); // lazy loads elements with default selector as '.lozad'

@@ -18,7 +18,7 @@ get_header(); ?>
 
 		<div class="page-body error-body">
 
-			<p><?php esc_html_e( 'Unfortunately the content you were looking for could not be found. Please check that the URL is correct or do a search using the form below.', 'foundry' ); ?></p>
+			<p><?php esc_html_e( 'Unfortunately the content you were looking for could not be found. Please check that the URL is correct.', 'foundry' ); ?></p>
 
 			<?php get_search_form(); ?>
 

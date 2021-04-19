@@ -41,7 +41,7 @@ $displaySocial = get_theme_mod('display-social');
 	<header class="site-header">
 		<div class="site-header__inner content-block">
 			<?php get_template_part( 'components/header/logo' ); ?>
-			<div class="site-header-nav-group">
+			<div id="menuGroup" class="site-header-nav-group">
 				<?php get_template_part( 'components/navigation/primary' ); ?>
 				<button class="btn">
 					<a href="<?php echo site_url('/contact') ?>" class="button-text">CONTACT US</a>

@@ -1,0 +1,35 @@
+.post-main {
+  .post-hero {
+    margin-bottom: 50px;
+    padding: 0px 0rem;
+    @media #{$breakpoint-sm-up} {
+      padding: 0px 8rem;
+    }
+    > img {
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 120px;
+    }
+  }
+  .post-article {
+    padding: 0px 0rem;
+    @media #{$breakpoint-sm-up} {
+      padding: 0px 8rem;
+    }
+  }
+  header {
+    margin-bottom: 50px;
+  }
+  > p,
+  > h1,
+  > h2,
+  > h3,
+  > h4,
+  > h5,
+  > h6 {
+    padding: 18px 1rem;
+    @media #{$breakpoint-sm-up} {
+      padding: 18px 8rem;
+    }
+  }
+}

@@ -38,21 +38,23 @@ get_header();
 	while ( have_posts() ) :
 		the_post();?>
 
-		<article class="case-study">
-					<img src="<?php echo get_the_post_thumbnail_url() ?>" alt="<?php echo get_the_title() ?> image">
+			<article class="case-study">
+				<a href="<?php echo the_permalink() ?>">
+				<img src="<?php echo get_the_post_thumbnail_url() ?>" alt="<?php echo get_the_title() ?> image">
 
-					<header>
-						<div class="case-study__cat">
-		
-						<?php $cat = get_the_category() ?>
-						<?php foreach($cat as $category) : ?>
-							<a href="<?php echo get_category_link( $category->term_id); ?>#caseAnchor"><?php echo $category->name ?></a>
-						<?php endforeach; ?>
-											
-						</div>
-						<h3><?php echo get_the_title() ?></h3>
-					</header><!-- .entry-header -->
-				</article>
+				<header>
+					<div class="case-study__cat">
+	
+					<?php $cat = get_the_category() ?>
+					<?php foreach($cat as $category) : ?>
+						<a href="<?php echo get_category_link( $category->term_id); ?>#caseAnchor"><?php echo $category->name ?></a>
+					<?php endforeach; ?>
+										
+					</div>
+					<h3><?php echo get_the_title() ?></h3>
+				</header><!-- .entry-header -->
+				</a>
+			</article>
 
 	<?php 	endwhile;
 

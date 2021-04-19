@@ -1,6 +1,6 @@
 .hidden_mobile {
   display: none;
-  @media #{$breakpoint-sm-up} {
+  @media #{$breakpoint-md-up} {
     display: block;
   }
 }
@@ -8,52 +8,126 @@
 .site-header {
   background-color: $color__bright;
   position: fixed;
-  width: 92vw;
-  left: 4vw;
-  top: 24px;
+  width: 100vw;
+  top: 0px;
   z-index: 10;
   transition: top 0.4s;
+
+  @media #{$breakpoint-lg-up} {
+    width: 92vw;
+    left: 4vw;
+    top: 24px;
+  }
   &__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    min-height: 65px;
   }
 
   &__logo {
+    z-index: 10;
     svg {
       max-width: 250px;
     }
   }
   &__hamburger {
     display: block;
-    @media #{$breakpoint-sm-up} {
+    z-index: 10;
+    @media #{$breakpoint-md-up} {
       display: none;
     }
   }
   &-nav-group {
-    flex-grow: 2;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    position: absolute;
+    z-index: 9;
+    width: 100vw;
+    height: 100vh;
+    top: -100vh;
+    left: 0;
+    background-color: $color__bright;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+    @media #{$breakpoint-md-up} {
+      flex-grow: 2;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      position: inherit;
+      width: auto;
+      height: auto;
+      pointer-events: all;
+      opacity: 1;
+      top: 0;
+    }
+    &.showMenu {
+      top: 0;
+      opacity: 1;
+      pointer-events: all;
+    }
     .primary-menu {
-      margin-right: 50px;
+      margin-right: 0px;
+      @media #{$breakpoint-md-up} {
+        margin-right: 15px;
+      }
+      @media #{$breakpoint-lg-up} {
+        margin-right: 15px;
+      }
+      @media #{$breakpoint-xl-up} {
+        margin-right: 50px;
+      }
+    }
+    .btn {
+      display: none;
+      @media #{$breakpoint-md-up} {
+        display: inline-block;
+      }
+      > a {
+        font-size: 13px;
+      }
     }
   }
   &__menu {
     > ul {
       display: flex;
-      justify-content: flex-end;
-      padding: 32px 0px;
       transition: padding 0.4s;
+      flex-direction: column;
+      margin-top: 80px;
+      @media #{$breakpoint-md-up} {
+        display: flex;
+        justify-content: flex-end;
+        padding: 32px 0px;
+        transition: padding 0.4s;
+        margin-top: 0px;
+        flex-direction: row;
+      }
     }
     .menu-item {
-      margin-left: 33px;
+      margin-left: 1rem;
+      padding-bottom: 30px;
+      @media #{$breakpoint-sm-up} {
+        margin-left: 2rem;
+      }
+      @media #{$breakpoint-md-up} {
+        margin-left: 18px;
+        padding-bottom: 0px;
+      }
+      @media #{$breakpoint-lg-up} {
+        margin-left: 33px;
+      }
       &:first-of-type {
-        margin-left: 0px;
+        margin-left: 1rem;
+        @media #{$breakpoint-sm-up} {
+          margin-left: 2rem;
+        }
+        @media #{$breakpoint-md-up} {
+          margin-left: 0px;
+        }
       }
       > a {
         color: $color__dark;
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 500;
         font-family: $header__fontname;
         text-transform: uppercase;

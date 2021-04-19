@@ -1,0 +1,19 @@
+.main-error {
+  padding: 123px 1rem;
+  @media #{$breakpoint-sm-up} {
+    padding: 163px 8rem;
+  }
+  @media #{$breakpoint-md-up} {
+    padding: 243px 17rem;
+  }
+  > h1 {
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    letter-spacing: 0.7px;
+  }
+  .error-body {
+    > form {
+      display: none;
+    }
+  }
+}

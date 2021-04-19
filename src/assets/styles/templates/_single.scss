@@ -1,0 +1,28 @@
+.single-column-main {
+  padding: 123px 1rem;
+  @media #{$breakpoint-sm-up} {
+    padding: 163px 8rem;
+  }
+  @media #{$breakpoint-md-up} {
+    padding: 243px 17rem;
+  }
+  > h1 {
+    text-transform: uppercase;
+    margin-bottom: 6rem;
+    letter-spacing: 0.7px;
+  }
+
+  > h2,
+  > h3,
+  > h4,
+  > h5,
+  > h6 {
+    padding: 13px 0px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+  }
+  > p {
+    padding-bottom: 10px;
+    line-height: 30px;
+  }
+}
