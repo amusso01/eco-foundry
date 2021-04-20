@@ -10,9 +10,9 @@
   .gallery-top {
     position: relative;
     .swiper-button-next {
-      position: absolute;
-      left: 37%;
-      bottom: 20px;
+      position: relative;
+      margin-bottom: 20px;
+      margin-top: 20px;
       cursor: pointer;
       z-index: 9;
       font-size: 13px;
@@ -20,12 +20,20 @@
       letter-spacing: 1.9px;
       font-weight: 600;
       color: $color__dark;
+      @media #{$breakpoint-sm-up} {
+        left: 37%;
+      }
     }
     &__container {
       margin-bottom: 60px;
       display: grid;
-      grid-template-columns: 1fr 2fr;
-      column-gap: 60px;
+      grid-template-columns: 1fr;
+      column-gap: 20px;
+      row-gap: 20px;
+      @media #{$breakpoint-sm-up} {
+        column-gap: 60px;
+        grid-template-columns: 1fr 2fr;
+      }
       .name {
         font-size: 21px;
         color: $color__dark;
@@ -53,6 +61,7 @@
       min-height: 100px;
       opacity: 0.4;
       max-width: 13vh;
+      min-width: 70px;
     }
     .swiper-slide-thumb-active {
       opacity: 1;

@@ -10,8 +10,12 @@
   }
   .company-grid-container {
     display: grid;
-    grid-template-columns: 1fr 0.8fr;
+    grid-template-columns: 1fr;
     column-gap: 120px;
+    row-gap: 50px;
+    @media #{$breakpoint-md-up} {
+      grid-template-columns: 1fr 0.8fr;
+    }
     .text-big {
       margin-bottom: 25px;
       > p {

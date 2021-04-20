@@ -1,6 +1,6 @@
 .index-main {
   position: relative;
-  padding: 0rem 0rem;
+  // padding: 0rem 0rem;
   @media #{$breakpoint-sm-up} {
     padding: 0rem 8rem;
   }
@@ -32,9 +32,12 @@
   }
   .case-tudies__container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     column-gap: 16px;
     row-gap: 30px;
+    @media #{$breakpoint-sm-up} {
+      grid-template-columns: 1fr 1fr;
+    }
   }
   .case-study {
     &__cat {
@@ -60,7 +63,12 @@
       font-weight: 500;
       letter-spacing: 0.2px;
       line-height: 30px;
-      width: 80%;
+      font-size: 18px;
+      padding-left: 1rem;
+      @media #{$breakpoint-md-up} {
+        width: 80%;
+        font-size: 21px;
+      }
     }
   }
 }

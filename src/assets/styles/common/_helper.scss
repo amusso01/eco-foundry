@@ -3,7 +3,7 @@
 
 .content-block {
   //create the "container" with this applied to any row or any 100% width element
-  padding: 0 1rem;
+  padding: 0 1.5rem;
   @media #{$breakpoint-sm-up} {
     padding: 0 2rem;
   }

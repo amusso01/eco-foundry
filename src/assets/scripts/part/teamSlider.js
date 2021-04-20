@@ -14,6 +14,7 @@ export default function teamSlider() {
 
     const galleryTop = new SwiperCore('.gallery-top', {
         loop: true,
+        autoHeight:true,
         navigation: {
           nextEl: '.swiper-button-next',
         },

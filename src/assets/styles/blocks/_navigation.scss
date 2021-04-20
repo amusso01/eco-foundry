@@ -1,4 +1,8 @@
 .block-navigation {
+  display: none;
+  @media #{$breakpoint-sm-up} {
+    display: block;
+  }
   &__container {
     display: flex;
     justify-content: space-between;
@@ -33,6 +37,10 @@
     }
   }
   &__button {
+    display: none;
+    @media #{$breakpoint-md-up} {
+      display: inline-block;
+    }
     .btn {
       min-width: 225px;
       > a {

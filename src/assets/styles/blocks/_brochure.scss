@@ -5,9 +5,12 @@
       padding: 6rem 8rem;
     }
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     column-gap: 60px;
     row-gap: 60px;
+    @media #{$breakpoint-md-up} {
+      grid-template-columns: 1fr 1fr;
+    }
     .brochure {
       border-bottom: 1px solid #f4f4f4;
       display: flex;

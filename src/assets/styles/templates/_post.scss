@@ -8,7 +8,10 @@
     > img {
       margin-left: auto;
       margin-right: auto;
-      padding-top: 120px;
+      padding-top: 20px;
+      @media #{$breakpoint-md-up} {
+        padding-top: 120px;
+      }
     }
   }
   .post-article {
@@ -18,7 +21,16 @@
     }
   }
   header {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    > h1 {
+      font-size: 30px;
+      @media #{$breakpoint-md-up} {
+        font-size: 55px;
+      }
+    }
+    @media #{$breakpoint-md-up} {
+      margin-bottom: 50px;
+    }
   }
   > p,
   > h1,
