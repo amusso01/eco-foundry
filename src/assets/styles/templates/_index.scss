@@ -8,15 +8,19 @@
   .category-menu {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     min-height: 100px;
+    @media #{$breakpoint-md-up} {
+      justify-content: center;
+    }
     > a {
       text-transform: uppercase;
       font-family: $header__fontname;
       font-size: 13px;
       letter-spacing: 1.9px;
       display: inline-block;
-      margin-right: 38px;
+      margin-right: 20px;
       color: $color__dark;
       font-weight: 500;
       &:last-of-type {
@@ -27,6 +31,9 @@
       }
       &:hover {
         text-decoration: underline;
+      }
+      @media #{$breakpoint-md-up} {
+        margin-right: 38px;
       }
     }
   }

@@ -70,13 +70,8 @@
     .primary-menu {
       margin-right: 0px;
       @media #{$breakpoint-md-up} {
-        margin-right: 15px;
-      }
-      @media #{$breakpoint-lg-up} {
-        margin-right: 15px;
-      }
-      @media #{$breakpoint-xl-up} {
-        margin-right: 50px;
+        margin-right: auto;
+        margin-left: auto;
       }
     }
     .btn {

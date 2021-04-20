@@ -75,6 +75,10 @@
             <?php endif; ?>
         </div>
 
+        <div id="backNav" class="back-to-nav">
+            <?php get_template_part( 'svg-template/svg', 'btn-arrow' ) ?>
+        </div>
+
     </section>
 
 
