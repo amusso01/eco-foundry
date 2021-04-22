@@ -69,6 +69,12 @@
                     <?php echo $item['accordion_title'] ?>
                   </div>
                   <div class="badger-accordion__trigger-icon">
+                    <div class="close">
+                    <?php get_template_part( 'svg-template/svg','plus' ) ?>
+                    </div>
+                    <div class="open">
+                      <?php get_template_part( 'svg-template/svg','minus' ) ?>
+                    </div>
                   </div>
               </button>
           </dt>

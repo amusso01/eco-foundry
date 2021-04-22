@@ -1,0 +1,1 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28.919" height="28.919" viewBox="0 0 28.919 28.919"><g data-name="Group 323" fill="none" stroke="#22cc61" stroke-width="2"><path data-name="Path 482" d="M14.459 0v28.919"/><path data-name="Path 483" d="M28.919 14.46H0"/></g></svg>
