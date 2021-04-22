@@ -9,8 +9,10 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    flex-wrap: wrap;
+
     min-height: 100px;
+    overflow: auto;
+    white-space: nowrap;
     @media #{$breakpoint-md-up} {
       justify-content: center;
     }

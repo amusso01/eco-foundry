@@ -9,6 +9,10 @@ html {
   font-size: $text__p;
   font-weight: 400;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
 }
 
 /**
@@ -26,6 +30,9 @@ ul,
 li,
 ol {
   color: $color__text;
+}
+ul {
+  list-style-position: inside;
 }
 
 em,
@@ -62,6 +69,9 @@ a {
     color: $color__main;
   }
 }
+p {
+  line-height: 30px;
+}
 
 /*
  * Headings
@@ -91,7 +101,10 @@ h1,
 
 h2,
 .h2 {
-  font-size: $text__h2;
+  font-size: 30px;
+  @media #{$breakpoint-sm-up} {
+    font-size: $text__h2;
+  }
 }
 
 h3,

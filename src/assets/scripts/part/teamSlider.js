@@ -17,6 +17,7 @@ export default function teamSlider() {
         autoHeight:true,
         navigation: {
           nextEl: '.swiper-button-next',
+          clickable: true,
         },
         thumbs: {
           swiper: galleryThumbs,

@@ -66,7 +66,12 @@
                 <div class="swiper-wrapper">
                 <?php foreach($sliders as $key => $slider) :?>
                     <div class="swiper-slide">
-                        <img src="<?php echo $slider['tab_image'] ?>" >
+
+                        <video playsinline  autoplay muted loop poster="<?php echo $slider['tab_image'] ?>" >
+                            <source src="<?php echo $slider['tab_image'] ?>" type="video/webm">
+                            Your browser does not support the video tag.
+                        </video>
+                        <!-- <img src="<?php echo $slider['tab_image'] ?>" > -->
                         <p class="description"><?php echo $slider['tab_description'] ?></p>
                     </div>
                 <?php endforeach ?>

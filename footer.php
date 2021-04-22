@@ -22,7 +22,7 @@
 					<p>Would you like more information?</p>
 					<p class="h2">Let’s work together</p>
 				</div>
-				<a href="#" class="button">Enquire today</a>
+				<a href="<?php echo site_url('contact-us') ?>" class="button">Enquire today</a>
 			</div>
 
 			<div class="footer-upper">

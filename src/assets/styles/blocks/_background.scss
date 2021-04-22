@@ -55,5 +55,10 @@
         margin-bottom: 30px;
       }
     }
+    .button {
+      &:hover {
+        color: $color__bright;
+      }
+    }
   }
 }

@@ -42,6 +42,7 @@
  function foundry_gutenblock_partners() {
     
     // Option vars
+    $anchorLink = get_field('anchor_point');
     $anchorLink = strtolower(trim( $anchorLink));
 
     // Get Vars

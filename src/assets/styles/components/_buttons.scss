@@ -17,7 +17,8 @@ button.btn {
   font-family: $header__fontname;
   position: relative;
   color: $color__dark;
-  font-size: 14px;
+  font-size: 13px;
+  letter-spacing: 1.5px;
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -35,6 +36,8 @@ button.btn {
     bottom: 0;
     margin: 0 1.85rem 0 0;
     font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
     z-index: 1;
     letter-spacing: 1.5px;
@@ -96,9 +99,15 @@ button.btn__white {
   border-radius: $button__radius;
   line-height: 0px;
   font-weight: 500;
+  font-size: 13px;
   font-family: $header__fontname;
   text-transform: uppercase;
+  transition: 0.3s;
+  letter-spacing: 1.5px;
   &:hover {
     color: $color__bright;
+    border: 1px solid $color__link;
+    background-color: transparent;
+    color: $color__dark;
   }
 }

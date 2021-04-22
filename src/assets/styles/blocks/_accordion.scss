@@ -6,7 +6,13 @@
   .accordion-container {
     > h2 {
       text-transform: uppercase;
-      margin-bottom: 35px;
+      margin-bottom: 65px;
+      @media #{$breakpoint-sm-up} {
+        margin-bottom: 35px;
+      }
+    }
+    .badger-accordion__panel {
+      transition: max-height 0.5s;
     }
   }
   .btn {

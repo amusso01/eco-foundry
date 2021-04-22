@@ -45,10 +45,16 @@
         }
       }
     }
+    .swiper-wrapper {
+      min-height: 580px !important;
+    }
     .swiper-slide {
       img {
         max-width: 80%;
         margin: auto;
+        margin-bottom: 80px;
+      }
+      video {
         margin-bottom: 80px;
       }
     }

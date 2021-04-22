@@ -12,7 +12,6 @@
   top: 0px;
   z-index: 10;
   transition: top 0.4s;
-
   @media #{$breakpoint-md-up} {
     width: 92vw;
     left: 4vw;
@@ -75,8 +74,13 @@
       }
     }
     .btn {
-      display: none;
+      display: inline-block;
+      margin-top: 40px;
       @media #{$breakpoint-md-up} {
+        display: none;
+        margin-top: 0px;
+      }
+      @media #{$breakpoint-lg-up} {
         display: inline-block;
       }
       > a {
@@ -89,7 +93,7 @@
       display: flex;
       transition: padding 0.4s;
       flex-direction: column;
-      margin-top: 80px;
+      margin-top: 110px;
       @media #{$breakpoint-md-up} {
         display: flex;
         justify-content: flex-end;
@@ -100,7 +104,7 @@
       }
     }
     .menu-item {
-      margin-left: 1rem;
+      margin-left: 1.5rem;
       padding-bottom: 30px;
       @media #{$breakpoint-sm-up} {
         margin-left: 2rem;
@@ -113,7 +117,7 @@
         margin-left: 33px;
       }
       &:first-of-type {
-        margin-left: 1rem;
+        margin-left: 1.5rem;
         @media #{$breakpoint-sm-up} {
           margin-left: 2rem;
         }

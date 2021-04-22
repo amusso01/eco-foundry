@@ -1,14 +1,16 @@
 .block-navigation {
-  display: none;
-  @media #{$breakpoint-sm-up} {
-    display: block;
-  }
+  // display: none;
+  // @media #{$breakpoint-sm-up} {
+  //   display: block;
+  // }
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   &__nav {
+    overflow: auto;
+    white-space: nowrap;
     > ul {
       display: flex;
       list-style: none;
@@ -44,13 +46,11 @@
     .btn {
       min-width: 225px;
       > a {
-        color: $color__dark;
+        color: $color__bright;
         font-size: 13px;
       }
-      &:hover {
-        > a {
-          color: $color__bright;
-        }
+      .circle {
+        max-width: 100%;
       }
     }
   }

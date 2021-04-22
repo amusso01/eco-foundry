@@ -15,6 +15,9 @@
       padding: 13px 17rem;
     }
   }
+  > p {
+    line-height: 35px;
+  }
   .block-front-boxes {
     margin-top: 4rem;
     &__container {
@@ -74,6 +77,7 @@
             > a {
               font-size: 13px;
               font-weight: 600;
+              letter-spacing: 1.5px;
             }
           }
         }
@@ -112,6 +116,11 @@
         margin-bottom: 35px;
       }
       .btn {
+        margin-left: auto;
+        display: inherit;
+        @media #{$breakpoint-sm-up} {
+          margin-left: 0px;
+        }
         > a {
           font-weight: 700;
           font-size: 13px;
@@ -131,6 +140,10 @@
     text-align: center;
     > h2 {
       margin-bottom: 20px;
+      margin-top: 40px;
+      @media #{$breakpoint-sm-up} {
+        margin-top: 0px;
+      }
     }
     > img {
       margin: auto;
@@ -146,6 +159,10 @@
     display: grid;
     grid-template-columns: 1fr 1.41fr;
     column-gap: 1rem;
+    margin-top: 30px;
+    @media #{$breakpoint-sm-up} {
+      margin-top: 0px;
+    }
     img {
       object-fit: cover;
     }

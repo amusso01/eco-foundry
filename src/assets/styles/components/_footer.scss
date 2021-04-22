@@ -26,6 +26,7 @@ footer.site-footer {
       font-size: 13px;
       min-height: 75px;
       min-width: 210px;
+      letter-spacing: 1.5px;
     }
     .text {
       text-align: center;
@@ -80,20 +81,20 @@ footer.site-footer {
       }
       .menu-item {
         margin-left: 0px;
-        padding: 40px 0px;
-        text-align: center;
+        padding: 20px 0px;
+        text-align: left;
         @media #{$breakpoint-sm-up} {
           margin-left: 33px;
           padding: 20px 0px;
-          text-align: left;
         }
         &:first-of-type {
           margin-left: 0px;
         }
         > a {
           color: $color__bright;
-          font-size: 14px;
+          font-size: 13px;
           font-weight: 500;
+          letter-spacing: 1.5px;
           font-family: $header__fontname;
           text-transform: uppercase;
           &:hover {
@@ -113,18 +114,18 @@ footer.site-footer {
       .menu-item {
         margin-left: 0px;
         padding: 20px 0px;
-        text-align: center;
+        text-align: left;
         @media #{$breakpoint-sm-up} {
           margin-left: 33px;
           padding: 40px 0px;
-          text-align: left;
         }
         &:first-of-type {
           margin-left: 0px;
         }
         > a {
-          font-size: 14px;
+          font-size: 13px;
           font-weight: 500;
+          letter-spacing: 1.5px;
           font-family: $header__fontname;
           text-transform: uppercase;
           &:hover {
@@ -135,21 +136,22 @@ footer.site-footer {
     }
   }
   .footer-lower__social-row {
-    display: flex;
-    justify-content: center;
     align-items: center;
     padding-bottom: 20px;
     flex-wrap: wrap;
     @media #{$breakpoint-sm-up} {
+      display: flex;
       justify-content: space-between;
     }
     .privacy {
-      display: flex;
       margin-bottom: 30px;
       margin-top: 20px;
+
       @media #{$breakpoint-sm-up} {
         margin-bottom: 0px;
         margin-top: 0px;
+        display: flex;
+        align-items: center;
       }
       > a {
         font-size: 13px;
@@ -160,8 +162,10 @@ footer.site-footer {
         }
       }
       > p {
-        margin-left: 23px;
         font-size: 13px;
+        @media #{$breakpoint-sm-up} {
+          margin-left: 23px;
+        }
       }
     }
     .social-menu {
