@@ -67,7 +67,8 @@
                         <div class="description">
                             <p class="name"><?php echo $member['name'] ?></p>
                             <p class="role"><?php echo $member['role'] ?></p>
-                            <p class="bio"><?php echo $member['description'] ?></p>
+                            <p class="bio"  ><?php echo $member['description'] ?></p>
+                            <a href="<?php echo $member['social'] ?>" style="margin-top:50px;display:inline-block;" rel="noopener noreferrer" to target="_blank"><?php get_template_part( 'svg-template/svg', 'linkedin' ) ?></a>
                         </div>
                     </div>
                     <?php endforeach ?>
