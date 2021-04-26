@@ -45,11 +45,13 @@
 				<p><?php echo $bannerText ?></p>
 				
 			</div>
+			<?php if($button['url'] )  :?>
 			<button class="btn btn__white">
-				<a href="" class="button-text"><?php echo $button['title'] ?></a>
+				<a href="<?php echo $button['url'] ?>" class="button-text"><?php echo $button['title'] ?></a>
 				<div class="circle">
 					<span class="icon arrow"></span>
 				</div>
 			</button>
+			<?php endif;?>
 		</div>
 	</div>	

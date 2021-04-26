@@ -43,13 +43,13 @@
 					<div class="social">
 						<ul class="social-menu">
 							<li class="social-item">
-								<a href=""><?php get_template_part( 'svg-template/svg', 'facebook' ) ?></a>
+								<a rel="noopener noreferrer" to target="_blank" href="https://www.facebook.com/eco.foundry"><?php get_template_part( 'svg-template/svg', 'facebook' ) ?></a>
 							</li>
 							<li class="social-item">
-								<a href=""><?php get_template_part( 'svg-template/svg', 'twitter' ) ?></a>
+								<a rel="noopener noreferrer" to target="_blank" href="https://twitter.com/EcoFoundry"><?php get_template_part( 'svg-template/svg', 'twitter' ) ?></a>
 							</li>
 							<li class="social-item">
-								<a href=""><?php get_template_part( 'svg-template/svg', 'instagram' ) ?></a>
+								<a rel="noopener noreferrer" to target="_blank" href="https://www.instagram.com/eco_foundry/"><?php get_template_part( 'svg-template/svg', 'instagram' ) ?></a>
 							</li>
 						</ul>
 					</div>

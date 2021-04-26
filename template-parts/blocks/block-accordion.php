@@ -86,14 +86,14 @@
           <?php endforeach; ?>
     
         </dl>
-
+        <?php if($button['url'] )  :?>
         <button class="btn">
 					<a href="<?php echo $button['url'] ?>" class="button-text"><?php echo $button['title'] ?></a>
 					<div class="circle">
 						<span class="icon arrow"></span>
 					</div>
 				</button>
-      
+      <?php endif;?>
       </div>
 
 

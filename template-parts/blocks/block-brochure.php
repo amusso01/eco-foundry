@@ -61,12 +61,14 @@
           <article class="brochure">
             <h3><?php echo $single['title']?></h3>
             <p><?php echo $single['body_text'] ?></p>
+            <?php if($single['link']['url'])  :?>
             <button class="btn btn__white">
-                    <a href="<?php echo $single['link']['url'] ?>" class="button-text"><?php echo $single['link']['title'] ?></a>
-                    <div class="circle">
-                        <span class="icon arrow"></span>
-                    </div>
-                </button>
+                <a href="<?php echo $single['link']['url'] ?>" class="button-text"><?php echo $single['link']['title'] ?></a>
+                <div class="circle">
+                    <span class="icon arrow"></span>
+                </div>
+            </button>
+            <?php endif; ?>
           </article>
         <?php endforeach; ?>
       </div>
