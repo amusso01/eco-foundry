@@ -8,13 +8,15 @@
  *
  * @package foundry
  */
+$bannerText = get_field('banner_text');
+$button = get_field('banner_button');
 
 ?>
 
 </div><!-- #content -->
 
 	<footer class="site-footer">
-		<div class="top-line"></div>
+		<!-- <div class="top-line"></div> -->
 		<div class="site-footer__inner">
 
 			<div class="footer-enquire content-block">
@@ -24,6 +26,23 @@
 				</div>
 				<a href="<?php echo site_url('contact-us') ?>" class="button">Enquire today</a>
 			</div>
+
+			<div class="main-hero-banner ">
+				<div class="hero-banner__container content-block">
+					<div class="text">
+						<p><?php echo $bannerText ?></p>
+						
+					</div>
+					<?php if($button['url'] )  :?>
+					<button class="btn btn__white">
+						<a href="<?php echo $button['url'] ?>" class="button-text"><?php echo $button['title'] ?></a>
+						<div class="circle">
+							<span class="icon arrow"></span>
+						</div>
+					</button>
+					<?php endif;?>
+				</div>
+			</div>	
 
 			<div class="footer-upper">
 				<div class="footer-upper__menu content-block">

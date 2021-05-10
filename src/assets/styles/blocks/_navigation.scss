@@ -24,15 +24,16 @@
           letter-spacing: 1.5px;
           color: $color__dark;
           font-size: 13px;
-          margin-right: 25px;
-
+          // margin-right: 25px;
+          padding: 0px 13px;
+          border-right: 2px solid $color__dark;
           &:hover {
             color: $color__main;
           }
         }
         &:last-of-type {
           a {
-            margin-right: 0px;
+            border-right: none;
           }
         }
       }

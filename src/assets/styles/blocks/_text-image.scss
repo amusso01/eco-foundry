@@ -1,7 +1,7 @@
 .block-text-image {
-  padding: 6rem 0rem;
+  padding: 5rem 0rem;
   @media #{$breakpoint-sm-up} {
-    padding: 6rem 8rem;
+    padding: 5rem 6rem;
   }
   &__container {
     display: grid;
@@ -12,7 +12,7 @@
     }
     @media #{$breakpoint-md-up} {
       grid-template-columns: 1fr 1fr;
-      column-gap: 60px;
+      column-gap: 50px;
     }
     @media #{$breakpoint-lg-up} {
       column-gap: 90px;
@@ -23,7 +23,7 @@
     .big-text {
       margin-bottom: 30px;
       @media #{$breakpoint-md-up} {
-        padding-right: 80px;
+        padding-right: 30px;
       }
       h2 {
         p {
@@ -43,7 +43,8 @@
     .small-text {
       > p {
         margin-bottom: 0;
-        line-height: 30px;
+        line-height: 26px;
+        font-size: 14px;
         > strong {
           font-size: 21px;
           letter-spacing: 0.21px;
@@ -69,7 +70,7 @@
         }
       }
       @media #{$breakpoint-md-up} {
-        padding-right: 80px;
+        padding-right: 30px;
       }
       line-height: 30px;
     }

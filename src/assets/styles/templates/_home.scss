@@ -36,7 +36,7 @@
         align-items: center;
         z-index: 3;
         @media #{$breakpoint-md-up} {
-          min-height: 630px;
+          min-height: 465px;
         }
         &:after {
           @include pseudo;
@@ -89,16 +89,16 @@
   &__container {
     display: grid;
     background-color: $color__footerBg;
-    padding: 50px 2rem;
+    padding: 15px 2rem;
     column-gap: 5rem;
     grid-template-columns: 1fr;
     @media #{$breakpoint-sm-up} {
       grid-template-columns: 1fr 1fr;
-      padding: 50px 4rem;
+      padding: 15px 4rem;
     }
     @media #{$breakpoint-md-up} {
       grid-template-columns: 1fr 1fr 1fr;
-      padding: 50px 6rem;
+      padding: 15px 6rem;
     }
     .single-page {
       padding-bottom: 50px;
@@ -132,10 +132,10 @@
 .block-front-images {
   &__container {
     @media #{$breakpoint-sm-up} {
-      padding: 84px 8rem 40px;
+      padding: 54px 8rem 40px;
     }
     @media #{$breakpoint-md-up} {
-      padding: 84px 17rem 40px;
+      padding: 64px 17rem 40px;
     }
     text-align: center;
     > h2 {
@@ -148,12 +148,19 @@
     > img {
       margin: auto;
       margin-bottom: 25px;
+      max-width: 300px;
     }
     > p {
       color: #4c556a;
       letter-spacing: 0.1px;
       line-height: 30px;
     }
+  }
+  .singleImage {
+    min-height: 420px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .front-images__grid {
     display: grid;

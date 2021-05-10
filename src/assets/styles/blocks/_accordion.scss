@@ -1,7 +1,7 @@
 .block-accordion {
   padding: 90px 0rem;
   @media #{$breakpoint-sm-up} {
-    padding: 90px 8rem;
+    padding: 90px 4rem;
   }
   .accordion-container {
     > h2 {
@@ -9,6 +9,7 @@
       margin-bottom: 65px;
       @media #{$breakpoint-sm-up} {
         margin-bottom: 35px;
+        font-size: 30px;
       }
     }
     .badger-accordion__panel {
@@ -25,9 +26,13 @@
         pointer-events: none;
         transition: 0.5s;
         position: absolute;
-        top: 36%;
+        top: 46%;
         left: 50%;
         transform: translate(-50%, -50%);
+        > svg {
+          width: 18px;
+          height: 18px;
+        }
       }
       .close {
         transition: 0.5s;
@@ -37,7 +42,22 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        > svg {
+          width: 18px;
+          height: 18px;
+        }
       }
+    }
+    .badger-accordion__trigger {
+      padding: 10px;
+    }
+    .js-badger-accordion-panel-inner {
+      > p {
+        font-size: 14px;
+      }
+    }
+    .badger-accordion__trigger-title {
+      font-size: 18px;
     }
     .badger-accordion__trigger[aria-expanded="true"] {
       .open {

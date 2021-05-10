@@ -39,19 +39,4 @@
 		</div>
 
 	</section>
-	<div class="main-hero-banner ">
-		<div class="hero-banner__container content-block">
-			<div class="text">
-				<p><?php echo $bannerText ?></p>
-				
-			</div>
-			<?php if($button['url'] )  :?>
-			<button class="btn btn__white">
-				<a href="<?php echo $button['url'] ?>" class="button-text"><?php echo $button['title'] ?></a>
-				<div class="circle">
-					<span class="icon arrow"></span>
-				</div>
-			</button>
-			<?php endif;?>
-		</div>
-	</div>	
+	

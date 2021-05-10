@@ -102,13 +102,13 @@ get_header();
 					<img src="<?php echo $imagesLogo ?>" alt="eco logo">
 					<p><?php echo $imagesText ?></p>
 				</div>			
-				<div class="front-images__grid">
-					<?php foreach($imagesImages as $key => $singleImage) :?>
-						<div class="singleImage">
-							<img src="<?php echo $singleImage ?>" alt="ecological pictures">
-						</div>
-					<?php endforeach; ?>
-				</div>
+			
+				
+					<div class="singleImage" style="background-image:url('<?php echo $imagesImages ?>)">
+						
+					</div>
+				
+			
 			</section>
 			<section class="block-partners content-block" >
 				<div class="block-partners__container ">
